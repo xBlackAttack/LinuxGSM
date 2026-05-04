@@ -31,6 +31,6 @@ jobs:
         uses: creyD/prettier_action@v4.6
         with:
           prettier_plugins: "prettier-plugin-sh prettier-plugin-jinja-template"
-          prettier_options: --write .
+          prettier_options: --check .
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_message: "chore(prettier): format code"
+          no_commit: true
